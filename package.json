@@ -1,0 +1,30 @@
+{
+  "name": "commits",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "run": "node --watch ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "prettier": "prettier-config-standard",
+  "devDependencies": {
+    "prettier-config-standard": "5.0.0",
+    "standard": "17.0.0"
+  },
+  "dependencies": {
+    "@bdsqqq/try": "2.3.1",
+    "@clack/prompts": "0.6.3",
+    "picocolors": "1.0.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  },
+  "volta": {
+    "node": "18.15.0"
+  }
+}
