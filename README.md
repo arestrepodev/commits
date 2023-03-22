@@ -4,11 +4,11 @@
 - [x] Pedirle al usuario nombre del commit
 - [x] Mostrar una lista de posibles commits
 - [x] Comprobar si está en un repositorio de git
-- [ ] Pedirle al usuario si es breaking change
-- [ ] Confirmar con el usuario el commit
-- [ ] Crear el commit
-- [ ] Crear binario
-- [ ] Publicar el paquete en npm
+- [x] Pedirle al usuario si es breaking change
+- [x] Confirmar con el usuario el commit
+- [x] Crear el commit
+- [x] Crear binario
+- [x] Publicar el paquete en npm
 
 ## Inicializar proyecto + linter
 
