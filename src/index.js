@@ -27,7 +27,7 @@ if (stagedFiles.length === 0 && changedFiles.length > 0) {
     }))
   })
 
-  if (isCancel(files)) exitProgram({ message: 'No hay archivos para commitear' })
+  if (isCancel(files)) exitProgram()
 
   await gitAdd({ files })
 }
@@ -74,9 +74,9 @@ commit = breakingChange ? `${commit} [Breaking change]` : commit
 
 const shouldBeContinue = await confirm({
   initialValue: true,
-  message: `${colors.cyan('¿Quieres crear el commit con el siguiente mensaje:')} ${colors.green(colors.bold(commit))}?
-    ${colors.cyan('¿Confirmas?')}
-  `
+  message: `${colors.cyan('¿Quieres crear el commit con el siguiente mensaje?')}
+  ${colors.green(colors.bold(commit))}
+  ${colors.cyan('¿Confirmas?')}`
 })
 
 if (isCancel(shouldBeContinue)) exitProgram()
@@ -86,6 +86,6 @@ if (!shouldBeContinue) {
   process.exit(0)
 }
 
-await gitCommit(commit)
+await gitCommit({ commit })
 
 outro(colors.green('✓ Commit creado con éxito!! Gracias por usar el asistente'))
