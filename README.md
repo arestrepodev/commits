@@ -1,4 +1,4 @@
-# Crear CLI en NODE
+# Commits CLI in node
 
 - [x] Inicializar proyecto + linter
 - [x] Pedirle al usuario nombre del commit
