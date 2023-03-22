@@ -1,10 +1,14 @@
 {
   "name": "commits",
   "version": "1.0.0",
-  "description": "",
+  "description": "Create Commit CLI in easy way",
   "main": "index.js",
   "type": "module",
+  "bin": {
+    "commits": "./src/index.js"
+  },
   "scripts": {
+    "commit":  "commits",
     "run": "node --watch ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +17,7 @@
   "license": "ISC",
   "prettier": "prettier-config-standard",
   "devDependencies": {
+    "commits": "file://.",
     "prettier-config-standard": "5.0.0",
     "standard": "17.0.0"
   },
