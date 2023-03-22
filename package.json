@@ -1,6 +1,6 @@
 {
   "name": "arestrepohernandez-commits",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Create Commit CLI in easy way",
   "main": "index.js",
   "type": "module",
