@@ -1,14 +1,14 @@
 {
-  "name": "commits",
+  "name": "arestrepohernandez-commits",
   "version": "1.0.0",
   "description": "Create Commit CLI in easy way",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "commits": "./src/index.js"
+    "commits": "./src/bin.js"
   },
   "scripts": {
-    "commit":  "commits",
+    "commit": "commits",
     "run": "node --watch ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,6 +24,7 @@
   "dependencies": {
     "@bdsqqq/try": "2.3.1",
     "@clack/prompts": "0.6.3",
+    "arestrepohernandez-commits": "^1.0.0",
     "picocolors": "1.0.0"
   },
   "eslintConfig": {
